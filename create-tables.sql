@@ -1,7 +1,7 @@
 CREATE TABLE aluno(
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
-    matricula VARCHAR(20) unique,
+    matricula VARCHAR(20) UNIQUE,
     data_nascimento DATE,
     pontuacao INTEGER
 );
@@ -17,7 +17,9 @@ CREATE TABLE atividade(
 );
 
 INSERT INTO aluno VALUES
-(NULL, "Ronaldinho Gaucho", "233vv4221", "2003-04-14", 10),
-(NULL, "Tainara Silva", "233vv4222", "2003-9-10", 04),
-(NULL, "Felipe Guttemberg", "233vv4553", "1998-12-04", 1),
-(NULL, "Daniel silva", "233ff4552", "2000-10-14", 4)
+(DEFAULT, "Ronaldinho Gaucho", "233vv4221", "2003-04-14", 10),
+(DEFAULT, "Tainara Silva", "233vv4222", "2003-9-10", 04),
+(DEFAULT, "Felipe Guttemberg", "233vv4553", "1998-12-04", 1),
+(DEFAULT, "Daniel silva", "233ff4552", "2000-10-14", 4)
+
+SELECT * FROM aluno
