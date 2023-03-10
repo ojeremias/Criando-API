@@ -22,7 +22,8 @@ const Aluno = db.define("aluno", {
     type: DataTypes.INTEGER,
     defaultValue: 0,
   },
-  tableName: "aluno",
+},{
+  tableName: 'aluno'
 });
 
 module.exports = Aluno;
