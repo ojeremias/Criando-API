@@ -10,6 +10,6 @@ app.use("/alunos", alunoRouter);
 
 app.listen(3000, async () => {
   const resultDb = await database.sync({ alter: true });
-  console.log(resultDb);
+  // console.log(resultDb);
   console.log("Server started!");
 });
